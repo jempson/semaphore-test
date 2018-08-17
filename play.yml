@@ -3,6 +3,7 @@
   hosts: localhost
   vars_files: ['credentials.yml']
   tasks:
+  become: yes
  
  
 #
