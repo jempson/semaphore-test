@@ -1,0 +1,20 @@
+- name: User configuration
+  remote_user: its
+  hosts: all
+  vars_files: ['credentials.yml']
+  tasks:
+ 
+ 
+#
+#========================================#
+#    User Configuration
+#========================================#
+ 
+ 
+    - name: User its 
+      user:
+        name: its
+        state: present
+        update_password: always
+        password: "{{ user_default_password }}"
+        shell: /bin/bash
