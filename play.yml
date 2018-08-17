@@ -1,5 +1,5 @@
 - name: User configuration
-  remote_user: root
+  remote_user: its
   hosts: localhost
   vars_files: ['credentials.yml']
   tasks:
