@@ -1,6 +1,6 @@
 - name: User configuration
   remote_user: its
-  hosts: all
+  hosts: localhost
   vars_files: ['credentials.yml']
   tasks:
  
